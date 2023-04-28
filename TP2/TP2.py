@@ -22,5 +22,4 @@ def weather():
         return jsonify({'error': 'unable to get weather data'})
 
 if __name__ == '__main__':
-   
     app.run(host='0.0.0.0', port=8081)
