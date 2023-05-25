@@ -7,5 +7,5 @@ WORKDIR /app
 
 COPY TP2.py .
 
-CMD [ "python", "./TP2.py" ]
+CMD [ "python", "./TP3.py" ]
 
