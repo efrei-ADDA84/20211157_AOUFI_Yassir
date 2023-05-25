@@ -5,7 +5,6 @@ RUN pip install flask
 
 WORKDIR /app
 
-COPY TP2.py .
+COPY TP3.py .
 
 CMD [ "python", "./TP3.py" ]
-
