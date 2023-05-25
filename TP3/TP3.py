@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST', 'PUT'])
 def weather():
-    lat = 48.85667
-    lon = 2.35222
+    lat = float(os.getenv("LAT", "48.8566"))
+    lon = float(os.getenv("LONG", "2.3522"))
     api_key = os.environ.get('API_KEY')
     url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=369ebc28aaa5333e2bb4721d75c09830'
 ##{api_key}'
