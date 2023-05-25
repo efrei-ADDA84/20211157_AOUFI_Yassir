@@ -9,7 +9,8 @@ def weather():
     lat = 48.85667
     lon = 2.35222
     api_key = os.environ.get('API_KEY')
-    url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}'
+    url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=369ebc28aaa5333e2bb4721d75c09830'
+##{api_key}'
     response = requests.get(url)
     if response.status_code == 200:
         weather_data = response.json()
